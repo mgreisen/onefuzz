@@ -514,11 +514,11 @@ dependencies = [
 
 [[package]]
 name = "ctrlc"
-version = "3.2.1"
+version = "3.2.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a19c6cedffdc8c03a3346d723eb20bd85a13362bb96dc2ac000842c6381ec7bf"
+checksum = "b37feaa84e6861e00a1f5e5aa8da3ee56d605c9992d33e082786754828e20865"
 dependencies = [
- "nix",
+ "nix 0.24.1",
  "winapi 0.3.9",
 ]
 
@@ -1298,9 +1298,9 @@ dependencies = [
 
 [[package]]
 name = "libc"
-version = "0.2.103"
+version = "0.2.126"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "dd8f7255a17a627354f321ef0055d63b898c6fb27eff628af4d1b66b7331edf6"
+checksum = "349d5a591cd28b49e1d1037471617a32ddcda5731b99419008085f72d5a53836"
 
 [[package]]
 name = "libclusterfuzz"
@@ -1524,6 +1524,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "nix"
+version = "0.24.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8f17df307904acd05aa8e32e97bb20f2a0df1728bbc2d771ae8f9a90463441e9"
+dependencies = [
+ "bitflags",
+ "cfg-if 1.0.0",
+ "libc",
+]
+
+[[package]]
 name = "nom"
 version = "5.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1634,7 +1645,7 @@ dependencies = [
  "input-tester",
  "lazy_static",
  "log",
- "nix",
+ "nix 0.23.0",
  "notify",
  "onefuzz-telemetry",
  "pete",
@@ -1856,7 +1867,7 @@ checksum = "8e5abe343c643f2fadc7649db57083c62ce818d7bf89393f3bc70f7051adfa2b"
 dependencies = [
  "libc",
  "memoffset",
- "nix",
+ "nix 0.23.0",
  "thiserror",
 ]
 
