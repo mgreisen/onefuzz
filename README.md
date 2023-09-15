@@ -1,6 +1,6 @@
 # <img src="docs/onefuzz_text.svg" height="120" alt="OneFuzz" />
 
-# IMPORTANT NOTICE
+# :exclamation: IMPORTANT NOTICE
 
 **_Since September 2020 when OneFuzz was first open sourced, we’ve been on a journey to create a best-in-class orchestrator for running fuzzers, driving security and quality into our products._**
  
